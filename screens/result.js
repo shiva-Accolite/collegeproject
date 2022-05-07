@@ -2,7 +2,7 @@ import { Image, StyleSheet, Text, View, TouchableOpacity } from 'react-native'
 import React from 'react'
 import Quiz from './quiz'
 
-const Result = () => {
+const Result = ({navigation}) => {
   return (
     <View>
       <View>

@@ -4,7 +4,7 @@ import Result from './result'
 // import { useEffect } from 'react/cjs/react.production.min'
 const questions = ["Feeling nervous, anxious, or on edge","Having trouble relaxing?","Becoming easily annoyed or irritable","Over the last two weeks have you had trouble falling asleep, stay","feeling tired or having little energy","Not being able to stop or control being worried","Feeling bad about yourself - or that you are a failure or have let yourself","Thoughts that you would be better off dead, or of hurting yourself","don't feel like meeting friends or going out with them","Over the last two weeks have you had little interest or pleasure in"];
 const answers = [];
-const Quiz = () => {
+const Quiz = ({navigation}) => {
   const [count, setCount] = useState(0);
   return (
     <View style={styles.container}>
@@ -42,8 +42,8 @@ const Quiz = () => {
   function stcnt()
   {
     if(count==9){
-    //   navigation.navigate("Result");
-    alert("over")
+    //    navigation.navigate("Result");
+    alert("will see later")
     }
     else
     setCount(count+1);
@@ -67,7 +67,8 @@ const styles = StyleSheet.create({
     flex:1,
   },
   bottom:{
-    marginBottom:12,
+    marginBottom:5,
+    paddingBottom:5,
     paddingVertical:16,
     marginVertical:16,
     justifyContent:'space-between',
@@ -88,7 +89,7 @@ buttonText:{
 },
 question:{
   fontSize:28,
-
+  color:'black',
 },
 option:{
   fontSize:18,

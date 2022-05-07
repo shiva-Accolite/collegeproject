@@ -16,7 +16,7 @@ const Home = ({navigation}) => {
            style={styles.banner}
            resizeMode="contain"/>
      </View>
-     <TouchableOpacity onPress={()=>{}} style={styles.button}>
+     <TouchableOpacity onPress={()=>navigation.navigate("Quiz")} style={styles.button}>
          <Text style={styles.buttonText}>START</Text>
      </TouchableOpacity>
     </View>
